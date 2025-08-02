@@ -6,22 +6,25 @@ import {
   MenuHamburgerBody,
   FollowCursor,
   ListTests,
+  ListMeritsFlaws
 } from '../../components';
 import { useInView } from '../../utils/useInView';
 import faceImg from '../../assets/images/escudoMestre.png';
 import VMImg from '../../assets/images/v5capa-noBG.png';
-import aboutImg from '../../assets/images/circuloDeSangue.jpg';
+import bloodCircleImg from '../../assets/images/circuloDeSangue.jpg';
 
 export function Home() {
   const [aboutRef, aboutVisible] = useInView();
   const [artRef, artVisible] = useInView();
   const [testsRef, testsVisible] = useInView();
+  const [meritsFlawsRef, meritsFlawsVisible] = useInView();
 
   const menuOptions = [
     { label: 'Voltar ao topo', id: 'top' },
     { label: 'O Círculo', id: 'about-section' },
     { label: 'Artes', id: 'art-section' },
     { label: 'Testes', id: 'tests-section' },
+    { label: 'Vantagens/Desvantagens', id: 'meritsFlaws-section' },
   ];
 
   return (
@@ -50,7 +53,7 @@ export function Home() {
           className={aboutVisible ? 'visible' : ''}
         >
           <div className="sect">
-            <img src={aboutImg} alt="hivetron-technology" />
+            <img src={bloodCircleImg} alt="blood-circle" />
             <div>
               <S.Text>
                 Somos um grupo de amigos que se jutam ára se distrair e adentrar
@@ -85,6 +88,16 @@ export function Home() {
             <ListTests />
           </section>
         </S.TestsSection>
+
+        <S.MeritisFlawsSection id="meritsFlaws-section">
+          <section ref={meritsFlawsRef} className={meritsFlawsVisible ? 'visible' : ''}>
+            <S.HeaderSection>
+              <S.BloodIcon />
+              <S.Title>Lista de Vantagens e Desvantagens</S.Title>
+            </S.HeaderSection>
+            <ListMeritsFlaws />
+          </section>
+        </S.MeritisFlawsSection>
       </S.ContainerContent>
       <Footer />
     </S.Container>

@@ -2,6 +2,7 @@ export * from './Carousel';
 export * from './FollowCursor';
 export * from './Footer';
 export * from './Header';
+export * from './ListMeritsFlaws';
 export * from './ListTests';
 export * from './Menu';
 export * from './MenuHamburgerBody';

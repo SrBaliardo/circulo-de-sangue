@@ -211,3 +211,20 @@ export const TestsSection = styled.div`
     }
   }
 `;
+
+export const MeritisFlawsSection = styled.div`
+  height: 100% !important;
+
+  section {
+    padding: 20px !important;
+    height: 100% !important;
+    justify-content: flex-start !important;
+    margin-bottom: 50px !important;
+  }
+
+  @media (max-width: 430px) {
+    section {
+      margin-bottom: 80px !important;
+    }
+  }
+`;

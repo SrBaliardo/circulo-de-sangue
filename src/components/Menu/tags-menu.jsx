@@ -8,6 +8,10 @@ export const tagsMenu = [
     label: 'Artes',
   },
   {
+    id: 'meritsFlaws-section',
+    label: 'Vantagens/Desvantagens',
+  },
+  {
     id: 'about-section',
     label: 'O CÍRCULO',
   },
