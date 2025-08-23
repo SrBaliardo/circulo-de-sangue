@@ -22,6 +22,7 @@ export function Header() {
     { label: 'O Círculo', id: 'about-section' },
     { label: 'Artes', id: 'art-section' },
     { label: 'Testes', id: 'tests-section' },
+    { label: 'Vantagens/Desvantagens', id: 'meritsFlaws-section' },
   ];
 
   return (

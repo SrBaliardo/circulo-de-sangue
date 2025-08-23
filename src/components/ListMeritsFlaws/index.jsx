@@ -132,6 +132,15 @@ export function ListMeritsFlaws() {
           </label>
         </S.RadiosWrapper>
 
+        <div>
+          <label style={{ color: 'white' }}>
+            PB = Power Blood (Potência de Sangue) &nbsp;
+          </label>
+          <label style={{ color: 'white' }}>
+            &nbsp; WP = Willpower (Força de Vontade)
+          </label>
+        </div>
+
         <S.ContainerCards>
           {filteredMeritsFlaws.map((item, index) => {
             return (

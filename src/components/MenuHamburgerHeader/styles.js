@@ -70,7 +70,7 @@ export const MenuList = styled.ul`
 
 export const MenuItem = styled.li`
   position: relative;
-  width: 180px;
+  width: 220px;
   height: 40px;
   background-color: rgba(12, 12, 12, 0.8);
   display: flex;
@@ -101,7 +101,7 @@ export const MenuItem = styled.li`
     content: '';
     display: none;
     position: absolute;
-    left: 10px;
+    left: 0px;
     width: 25px;
     height: 25px;
     background-image: url(${DarkAnkh});
